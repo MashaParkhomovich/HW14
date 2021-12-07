@@ -1,0 +1,17 @@
+{
+  "name": "coffeeshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maryia Bondar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}

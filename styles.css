@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button{
+    color:#ee3769;
+    font-size:20px;
+    background:transparent;
+    cursor:pointer;
+    border:1px solid #ee3769;
+    width:180px;
+    height:40px;
+    text-align:center;
+    transition:all .6s ease-in-out;
+    margin: 10px;
+}
+
+button:hover{
+    color:#fff;
+    box-shadow:inset 0 0 0 160px #ee3769;
+
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    box-shadow: 10px -5px 11px 6px #ffffff, 5px 5px 20px rgb(1 1 26 / 50%);
+    align-content: space-evenly;
+    border-radius: 0px;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 15px;
+    cursor: pointer;
+    border: 1px solid darkslategray;
+}
+
+
+
+menu {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 12px;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+menu li {
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    color: #202020;
+}
+
+menu li:not(:last-child) {
+    margin-right: 23px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.modal-wrapper {
+    display: flex;
+    background: #00000047;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    position: relative;
+    background: rgb(255, 255, 255);
+    max-width: 800px;
+    width: 100%;
+    height: 70vh;
+    padding: 60px;
+}
+
+.modal-box section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.modal-box h1{
+    margin-bottom: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.counter-block {
+    display: flex;
+    background: #F0F0F3;
+    box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
+    width: 160px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ee3769;
+    font-size: 24px;
+}
+
+.counter-block span {
+    font-size:20px;
+    background:#ee3769;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.4), 5px 5px 10px rgba(174, 174, 192, 0.2), inset -2px -2px 4px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #FFFFFF;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: white;
+    cursor: pointer;
+}
+
+#app-footer {
+    height: 50vh;
+    background-color: #A3ADB2;
+}
+
+.text {
+    font-size: 42px;
+}
+
+.main {
+    background-image: url('./img/hero-bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    min-height: calc(100vh - 80px);
+}
+
+.main__title {
+    padding-top: 50px;
+    text-align: left;
+    max-width: 401px;
+    font-size: 66px;
+    line-height: 80px;
+    letter-spacing: 3.2px;
+    color: #FFFFFF;
+}
+
+.main__desc {
+    text-align: left;
+    max-width: 501px;
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.main__button {
+    margin-top: 35px;
+}
+
+.main__contant {
+    margin-left: auto;
+    max-width: 510px;
+}
+
+.cart__wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    display: grid;
+    grid-gap: 10px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.4), 5px 5px 10px rgba(174, 174, 192, 0.2), inset -2px -2px 4px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #FFFFFF;
+    margin-top: 15px;
+}
+
+.total__price{
+    font-size: 30px;
+    margin-left: 190px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.total__price::before{
+    content: 'Total Price: ';
+}
+
+.cart__wrapper .price__str::before{
+    content: 'Price: ';
+}
